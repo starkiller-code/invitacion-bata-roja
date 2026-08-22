@@ -420,7 +420,7 @@ document.addEventListener("DOMContentLoaded", function () {
         `¡Tenemos una cita! 😏❤️`;
 
     // Número de WhatsApp
-    const numeroWhatsApp = "3323935534";
+    const numeroWhatsApp = "xxxx";
 
     // Enlace de WhatsApp
     const enlaceWhatsApp =

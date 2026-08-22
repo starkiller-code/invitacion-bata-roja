@@ -6,11 +6,20 @@
 
 body {
     min-height: 100vh;
+
     font-family: Arial, sans-serif;
 
     background:
-        radial-gradient(circle at top, #4fc3f7, transparent 35%),
-        linear-gradient(135deg, #061a40, #020b1c);
+        radial-gradient(
+            circle at top,
+            #4fc3f7,
+            transparent 35%
+        ),
+        linear-gradient(
+            135deg,
+            #061a40,
+            #020b1c
+        );
 
     color: white;
 
@@ -73,7 +82,9 @@ strong {
     color: #f74f4f;
 }
 
-/* BOTONES */
+/* =========================
+   BOTONES
+========================= */
 
 button {
     width: 100%;
@@ -83,6 +94,7 @@ button {
     padding: 16px;
 
     border: none;
+
     border-radius: 50px;
 
     background: linear-gradient(
@@ -101,8 +113,9 @@ button {
     box-shadow:
         0 8px 20px rgba(21, 101, 192, 0.5);
 
-    transition: transform 0.3s ease,
-                box-shadow 0.3s ease;
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
 }
 
 button:hover {
@@ -116,10 +129,13 @@ button:active {
     transform: scale(0.96);
 }
 
-/* BOTONES SI / NO */
+/* =========================
+   BOTONES SI / NO
+========================= */
 
 .botones {
     display: flex;
+
     justify-content: center;
     align-items: center;
 
@@ -130,6 +146,7 @@ button:active {
 
 .botones button {
     width: 45%;
+
     margin-top: 0;
 }
 
@@ -139,7 +156,9 @@ button:active {
     background: #263238;
 }
 
-/* OPCIONES DE CITA */
+/* =========================
+   PLANES
+========================= */
 
 .planes {
     display: grid;
@@ -169,7 +188,9 @@ button:active {
     color: #d7efff;
 }
 
-/* CALENDARIO */
+/* =========================
+   CALENDARIO
+========================= */
 
 input[type="date"] {
     width: 100%;
@@ -189,7 +210,9 @@ input[type="date"] {
     font-size: 17px;
 }
 
-/* RESUMEN FINAL */
+/* =========================
+   RESUMEN
+========================= */
 
 .resumen {
     margin: 25px 0;
@@ -203,55 +226,10 @@ input[type="date"] {
     border: 1px solid rgba(41, 182, 246, 0.3);
 }
 
-/* ANIMACIONES */
+/* =========================
+   WHATSAPP
+========================= */
 
-@keyframes aparecer {
-
-    from {
-        opacity: 0;
-
-        transform: translateY(30px);
-    }
-
-    to {
-        opacity: 1;
-
-        transform: translateY(0);
-    }
-}
-
-@keyframes flotar {
-
-    0%, 100% {
-        transform: translateY(0);
-    }
-
-    50% {
-        transform: translateY(-8px);
-    }
-}
-
-/* CELULARES PEQUEÑOS */
-
-@media (max-width: 380px) {
-
-    .tarjeta {
-        padding: 28px 20px;
-    }
-
-    h1 {
-        font-size: 24px;
-    }
-
-    p {
-        font-size: 16px;
-    }
-
-    .planes {
-        grid-template-columns: 1fr;
-    }
-
-}
 .boton-whatsapp {
     display: block;
 
@@ -288,4 +266,54 @@ input[type="date"] {
 
 .boton-whatsapp:active {
     transform: scale(0.96);
+}
+
+/* =========================
+   ANIMACIONES
+========================= */
+
+@keyframes aparecer {
+
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes flotar {
+
+    0%,
+    100% {
+        transform: translateY(0);
+    }
+
+    50% {
+        transform: translateY(-8px);
+    }
+}
+
+
+
+@media (max-width: 380px) {
+
+    .tarjeta {
+        padding: 28px 20px;
+    }
+
+    h1 {
+        font-size: 24px;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    .planes {
+        grid-template-columns: 1fr;
+    }
 }

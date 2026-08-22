@@ -73,7 +73,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>La pregunta final...</h1>
 
             <p>
-                Bueno, Muchacha de Bata Roja...
+                Bueno, Chica de Bata Roja...
             </p>
 
             <p>
@@ -139,9 +139,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 return;
             }
-
-
-
 
             tamaño += 0.15;
 
@@ -408,7 +405,7 @@ function mostrarConfirmacion(plan, fecha) {
         </div>
 
         <p>
-           ❤️
+          . ❤️
         </p>
 
         <button id="confirmacion">

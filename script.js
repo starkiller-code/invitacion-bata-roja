@@ -408,8 +408,7 @@ function mostrarConfirmacion(plan, fecha) {
         </div>
 
         <p>
-            Ahora solo falta avisarle
-            al encargado de esta misión 😂
+           ❤️
         </p>
 
         <button id="confirmacion">
@@ -418,8 +417,7 @@ function mostrarConfirmacion(plan, fecha) {
 
         <p id="mensajeFinal"
            style="display:none; margin-top:20px;">
-            ❤️ ¡Perfecto! Ahora el encargado
-            avisa al encargado...no medio tiempo de hacer la base de datos asi que mandame la confirmacion con una foto o dime, jajaja 😏
+            ❤️ ¡Perfecto! avisa al encargado...no medio tiempo de hacer la base de datos asi que mandame la confirmacion con una foto o dime, jajaja 😏
         </p>
 
     `;

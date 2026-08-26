@@ -6,8 +6,6 @@ document.addEventListener("DOMContentLoaded", function () {
         .getElementById("comenzar")
         .addEventListener("click", preguntaUno);
 
-
-
     function preguntaUno() {
 
         tarjeta.innerHTML = `
@@ -287,7 +285,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 📅
             </div>
             <h1>
-                Ahora viene el calendario ❤️
+                Como vamos lento puse todo el calendario cuando quieras....❤️
             </h1>
 
             <p>
@@ -352,9 +350,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
-
-
 function mostrarConfirmacion(plan, fecha) {
 
     const partes = fecha.split("-");
@@ -402,7 +397,6 @@ function mostrarConfirmacion(plan, fecha) {
            style="display:none; margin-top:20px;">
             ❤️ ¡Perfecto! avisa al encargado...no medio tiempo de hacer la base de datos asi que mandame la confirmacion con una foto o dime jajaja 
         </p>
-
     `;
 
     document

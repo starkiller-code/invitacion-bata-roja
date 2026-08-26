@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Pregunta 1 👀</h1>
 
             <p>
-                ¿Estás dispuesta a ayudarme con mi tarea?
+                ¿Estás Segura?
             </p>
 
             <div class="botones">
@@ -43,8 +43,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>Pregunta 2</h1>
 
             <p>
-                Prometo que esta tarea es muy importante,
-                puede cambiar tu vida...
+                lo hice antes de saber que ibamos lento jaja,
             </p>
 
             <p>
@@ -77,7 +76,7 @@ document.addEventListener("DOMContentLoaded", function () {
             </p>
 
             <p>
-                En realidad esta no era una tarea normal. 😏
+                Es la primera vez que hago esto, acabo de aprender a programar esto...
             </p>
 
             <p>
@@ -92,7 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 </button>
 
                 <button id="noFinal">
-                    NO 🙈
+                    NO 💔
                 </button>
             </div>
         `;
@@ -104,9 +103,6 @@ document.addEventListener("DOMContentLoaded", function () {
             rechazar
         );
     }
-
-
-
 
     function configurarBotones(
         idSi,
@@ -130,9 +126,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             intentosNo++;
 
-
-      
-
             if (intentosNo >= 3 && funcionNo) {
 
                 funcionNo();
@@ -153,9 +146,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
             botonNo.style.transform =
                 `translate(${x}px, ${y}px)`;
-
-
-
 
             const mensajes = [
 
@@ -190,12 +180,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <h1>
                 Aprueba mis SOP PORFA
                 y te doy una pizza ❤️
-            </h1>
-
-            <p>
-                Bueno, continuando con la tarea 😏
-            </p>
-
             <p>
                 Ahora viene la parte importante...
             </p>
@@ -245,7 +229,17 @@ document.addEventListener("DOMContentLoaded", function () {
                     </small>
                 </button>
 
+                <button
+                    class="plan"
+                    data-plan="Ramdom "
+                >
+                    ramdom...
 
+                    <small>
+                        .........
+                    </small>
+                </button>
+                
                 <button
                     class="plan"
                     data-plan="Planetario 🌌"
@@ -285,9 +279,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
     }
 
-
-
-
     function mostrarCalendario(plan) {
 
         tarjeta.innerHTML = `
@@ -295,7 +286,6 @@ document.addEventListener("DOMContentLoaded", function () {
             <div class="emoji">
                 📅
             </div>
-
             <h1>
                 Ahora viene el calendario ❤️
             </h1>
@@ -387,7 +377,7 @@ function mostrarConfirmacion(plan, fecha) {
         </p>
 
         <p>
-            Parece que tenemos una cita 😏❤️
+            Parece que tenemos una cita ❤️
         </p>
 
         <div class="resumen">
@@ -404,17 +394,13 @@ function mostrarConfirmacion(plan, fecha) {
 
         </div>
 
-        <p>
-          . ❤️
-        </p>
-
         <button id="confirmacion">
             💌 Mandar la confirmación
         </button>
 
         <p id="mensajeFinal"
            style="display:none; margin-top:20px;">
-            ❤️ ¡Perfecto! avisa al encargado...no medio tiempo de hacer la base de datos asi que mandame la confirmacion con una foto o dime, jajaja 😏
+            ❤️ ¡Perfecto! avisa al encargado...no medio tiempo de hacer la base de datos asi que mandame la confirmacion con una foto o dime jajaja 
         </p>
 
     `;
@@ -423,7 +409,7 @@ function mostrarConfirmacion(plan, fecha) {
         .getElementById("confirmacion")
         .addEventListener("click", function () {
 
-            this.textContent = "✅ Confirmación lista";
+            this.textContent = "✅ Confirmado";
 
             this.disabled = true;
 
